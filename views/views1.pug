@@ -9,6 +9,16 @@ html(lang="en")
       h1 #{headerTitle}
     main
       p #{mainContent}
+      img(src=sample-image.jpg/swe.jpg, alt="engineer")
+
+      // Add a download button with an onclick event to trigger the download
+      button(type="button", onclick="downloadImage()") Download Image
+      script.
+        // Define a JavaScript function to make a request when the button is clicked
+        function downloadImage() {
+          // Trigger a GET request to download-image endpoint
+          window.location.href = '/download-image';
+        }
     footer
       p &copy; #{year} Your Company
     a(href="/view2") Go to View 2
