@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{pageTitle}
+  body
+    header
+      h1 #{headerTitle}
+    main
+      p #{mainContent}
+    footer
+      p &copy; #{year} Your Company
+    a(href="/") Go to View 1
+    form(action="/submitForm" method="post")
+      input(type="text" name="formData" placeholder="Enter data")
+      input(type="submit" value="Submit")
